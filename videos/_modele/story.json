@@ -1,0 +1,13 @@
+{
+  "_doc": "Squelette en 6 temps (≈ 60 s, 14 à 19 phrases). Remplace chaque phrase, garde l'ordre. Voir docs/04-ecriture-et-legendes.md.",
+  "phrases": [
+    ["ACCROCHE : un chiffre", "ou un fait *étonnant*."],
+    ["QUI / QUOI : qui a fait quoi,", "en *une phrase*."],
+    ["POURQUOI ÇA COMPTE (1) :", "une *image* à montrer."],
+    ["POURQUOI ÇA COMPTE (2) :", "une *comparaison* concrète."],
+    ["POURQUOI ÇA COMPTE (3) :", "la *conséquence*."],
+    ["LA NUANCE : ce qu'on", "ne sait *pas encore*."],
+    ["LA QUESTION : à toi,", "*facile* à répondre ?"],
+    ["Abonne-toi", "pour la suite."]
+  ]
+}

@@ -1,0 +1,24 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Montserrat;font-weight:900;src:url(../fonts/montserrat-latin-900-normal.woff2)}
+@font-face{font-family:Inter;font-weight:700;src:url(../fonts/inter-latin-700-normal.woff2)}
+body{margin:0;background:#f4f6fa;background-image:linear-gradient(#0001 1px,transparent 1px),linear-gradient(90deg,#0001 1px,transparent 1px);background-size:24px 24px;font-family:Inter,sans-serif;width:2100px}
+.g{display:grid;gap:8px;padding:12px 20px 20px;box-sizing:border-box}
+.full{grid-template-columns:repeat(6,1fr)}.heads{grid-template-columns:repeat(8,1fr)}
+.c{text-align:center;font-size:20px;font-weight:700;color:#333}.c svg{width:100%;height:auto}
+h1{font:900 44px Montserrat;margin:24px 20px 0}h2{font:900 28px Montserrat;margin:18px 20px 0;color:#555}
+</style></head><body>
+<h1 id="title"></h1>
+<h2>Poses</h2><div class="g full" id="poses"></div>
+<h2>Expressions</h2><div class="g heads" id="heads"></div>
+<script src="../character/character.js"></script>
+<script>
+// planche de personnage : toutes les poses et toutes les expressions, pour vérifier la cohérence d'un coup d'œil
+const C = CHARACTER; document.getElementById('title').textContent = (C.name || 'Personnage') + ' — planche';
+const exprs = Object.keys(C.EXPR), poses = Object.keys(C.POSE);
+const pg = document.getElementById('poses'), hg = document.getElementById('heads');
+poses.forEach((pose, i) => { const d = document.createElement('div'); d.className = 'c';
+  d.innerHTML = C.render({ pose, expr: exprs[i % exprs.length], open: i % 3 === 1 }) + `<div>${pose}</div>`; pg.appendChild(d); });
+exprs.forEach((expr) => { const d = document.createElement('div'); d.className = 'c';
+  d.innerHTML = C.render({ headOnly: true, expr }) + `<div>${expr}</div>`; hg.appendChild(d); });
+window.READY = true;
+</script></body></html>

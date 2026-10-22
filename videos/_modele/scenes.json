@@ -1,0 +1,28 @@
+{
+  "scenes": [
+    {"from": 0, "to": 0, "bg": "grid", "els": [
+      {"type": "big", "count": {"to": 42, "suffix": " %"}, "size": 260, "top": 520, "at": "0"},
+      {"type": "char", "mode": "head", "h": 420, "cx": 540, "cy": 1300, "seq": [{"pose": "neutral", "expr": "wow"}]}
+    ]},
+    {"from": 1, "to": 1, "bg": "grid", "els": [
+      {"type": "box", "text": "QUI ?\n*QUOI ?*", "top": 460, "size": 80, "r": -2},
+      {"type": "char", "mode": "head", "h": 420, "cx": 540, "cy": 1300, "seq": [{"pose": "neutral", "expr": "explain"}]}
+    ]},
+    {"from": 2, "to": 4, "bg": "grid", "els": [
+      {"type": "steps", "top": 440, "items": [{"text": "Image 1", "at": "2"}, {"text": "Comparaison", "at": "3"}, {"text": "Conséquence", "at": "4"}]},
+      {"type": "char", "mode": "head", "h": 420, "cx": 540, "cy": 1300, "seq": [{"pose": "neutral", "expr": "explain"}, {"at": "3", "pose": "neutral", "expr": "grin"}]}
+    ]},
+    {"from": 5, "to": 5, "bg": "grid", "els": [
+      {"type": "band", "text": "MAIS…", "top": 520, "at": "5"},
+      {"type": "char", "mode": "head", "h": 420, "cx": 540, "cy": 1300, "seq": [{"pose": "neutral", "expr": "skeptic"}]}
+    ]},
+    {"from": 6, "to": 6, "bg": "grid", "els": [
+      {"type": "chat", "text": "Ta réponse…", "top": 620, "cursor": true},
+      {"type": "char", "mode": "head", "h": 420, "cx": 540, "cy": 1300, "seq": [{"pose": "neutral", "expr": "smirk"}]}
+    ]},
+    {"from": 7, "to": 7, "bg": "pattern", "cap": "box", "els": [
+      {"type": "cta", "top": 380},
+      {"type": "char", "mode": "full", "h": 900, "cx": 540, "bottom": 1945, "seq": [{"pose": "wave", "expr": "joy"}]}
+    ]}
+  ]
+}

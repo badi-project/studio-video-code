@@ -1,0 +1,50 @@
+{
+  "_doc": "Une scène couvre les phrases from..to. Éléments : voir docs/02-ecrire-une-video.md. Zone de contenu : y 380 à 1060 quand la tête du personnage est affichée (cy 1300).",
+  "scenes": [
+    {"from": 0, "to": 0, "bg": "grid", "els": [
+      {"type": "big", "text": "BLEU ?", "size": 250, "top": 520, "at": "0.1"},
+      {"type": "tag", "text": "PHYSIQUE EXPRESS", "variant": "w", "top": 860, "at": "0.1+0.3", "r": -3},
+      {"type": "char", "mode": "head", "h": 420, "cx": 540, "cy": 1300, "seq": [{"pose": "neutral", "expr": "think"}, {"at": "0.1", "pose": "neutral", "expr": "wow"}]}
+    ]},
+    {"from": 1, "to": 3, "bg": "grid", "els": [
+      {"type": "sky", "top": 400, "at": "1", "atMolecules": "2.1", "atScatter": "3.1"},
+      {"type": "char", "mode": "head", "h": 420, "cx": 540, "cy": 1300, "seq": [{"pose": "neutral", "expr": "explain"}, {"at": "2.1", "pose": "neutral", "expr": "smirk"}, {"at": "3.2", "pose": "neutral", "expr": "grin"}]}
+    ]},
+    {"from": 4, "to": 4, "bg": "grid", "els": [
+      {"type": "bars", "top": 430, "items": [
+        {"label": "Bleu", "pct": 100, "at": "4", "value": "≈ ×5", "color": "#2b59ff"},
+        {"label": "Rouge", "pct": 20, "at": "4.2", "value": "×1", "color": "#e5484d"}
+      ]},
+      {"type": "char", "mode": "head", "h": 420, "cx": 540, "cy": 1300, "seq": [{"pose": "neutral", "expr": "wow"}]}
+    ]},
+    {"from": 5, "to": 5, "bg": "grid", "els": [
+      {"type": "box", "text": "Le ciel entier\n*diffuse du bleu*", "top": 420, "size": 70, "r": -2},
+      {"type": "char", "mode": "full", "h": 980, "cx": 540, "bottom": 1945, "seq": [{"pose": "explain2", "expr": "joy"}]}
+    ]},
+    {"from": 6, "to": 7, "bg": "grid", "els": [
+      {"type": "box", "variant": "ink", "text": "Et le violet ?", "top": 400, "size": 66, "at": "6"},
+      {"type": "list", "top": 600, "items": [
+        {"text": "Encore plus dispersé", "mark": "✓", "at": "6.1"},
+        {"text": "Moins émis par le Soleil", "mark": "✗", "at": "7"},
+        {"text": "Œil moins sensible", "mark": "✗", "at": "7.1"}
+      ]},
+      {"type": "char", "mode": "head", "h": 420, "cx": 540, "cy": 1300, "seq": [{"pose": "neutral", "expr": "think"}, {"at": "7", "pose": "neutral", "expr": "smirk"}]}
+    ]},
+    {"from": 8, "to": 8, "bg": "grid", "els": [
+      {"type": "cards", "top": 420, "h": 220, "items": [
+        {"glyph": "▲", "gsize": 90, "title": "Trajet *court*", "sub": "SOLEIL HAUT : LE BLEU DIFFUSÉ", "at": "8", "color": "#2b59ff"},
+        {"glyph": "▼", "gsize": 90, "title": "Trajet *long*", "sub": "SOLEIL BAS : IL RESTE L'ORANGE", "at": "8.1", "color": "#ff8a3d"}
+      ]},
+      {"type": "char", "mode": "head", "h": 420, "cx": 540, "cy": 1300, "seq": [{"pose": "neutral", "expr": "explain"}, {"at": "8.3", "pose": "neutral", "expr": "proud"}]}
+    ]},
+    {"from": 9, "to": 9, "bg": "grid", "els": [
+      {"type": "box", "variant": "accent", "text": "Ta réponse ?", "top": 420, "size": 76, "r": -2},
+      {"type": "chat", "text": "Sur Mars, le ciel est…", "top": 680, "size": 50, "cursor": true, "at": "9.1"},
+      {"type": "char", "mode": "head", "h": 420, "cx": 540, "cy": 1300, "seq": [{"pose": "neutral", "expr": "smirk"}]}
+    ]},
+    {"from": 10, "to": 10, "bg": "pattern", "cap": "box", "els": [
+      {"type": "cta", "top": 380},
+      {"type": "char", "mode": "full", "h": 900, "cx": 540, "bottom": 1945, "seq": [{"pose": "wave", "expr": "joy"}]}
+    ]}
+  ]
+}

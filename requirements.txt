@@ -1,0 +1,6 @@
+sherpa-onnx>=1.12
+numpy
+soundfile
+num2words
+pillow
+playwright

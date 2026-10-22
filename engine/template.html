@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><title>studio</title>
+<meta name="viewport" content="width=1080">
+<style>
+@font-face{font-family:Montserrat;font-weight:700;src:url({{ROOT}}fonts/montserrat-latin-700-normal.woff2)}
+@font-face{font-family:Montserrat;font-weight:800;src:url({{ROOT}}fonts/montserrat-latin-800-normal.woff2)}
+@font-face{font-family:Montserrat;font-weight:900;src:url({{ROOT}}fonts/montserrat-latin-900-normal.woff2)}
+@font-face{font-family:Inter;font-weight:500;src:url({{ROOT}}fonts/inter-latin-500-normal.woff2)}
+@font-face{font-family:Inter;font-weight:700;src:url({{ROOT}}fonts/inter-latin-700-normal.woff2)}
+@font-face{font-family:'JetBrains Mono';font-weight:500;src:url({{ROOT}}fonts/jetbrains-mono-latin-500-normal.woff2)}
+@font-face{font-family:'JetBrains Mono';font-weight:700;src:url({{ROOT}}fonts/jetbrains-mono-latin-700-normal.woff2)}
+html,body{margin:0;background:#000}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;background:var(--bg);font-family:Montserrat,Inter,sans-serif;color:var(--ink)}
+.scene{position:absolute;left:0;top:0;width:1080px;height:1920px;overflow:hidden;display:none}
+.bg-grid{background-color:var(--bg);background-image:linear-gradient(var(--grid) 2px,transparent 2px),linear-gradient(90deg,var(--grid) 2px,transparent 2px);background-size:40px 40px}
+.bg-pattern{background-color:var(--bg);background-image:var(--pattern);background-size:180px 180px}
+.bg-dots{background-color:var(--accent2);background-image:var(--dots);background-size:180px 180px}
+.bg-plain{background:var(--bg)}
+.bgl{position:absolute;inset:0}
+.abs{position:absolute}
+.box{position:absolute;background:var(--paper);border:8px solid var(--ink);box-shadow:14px 14px 0 var(--ink);font:900 64px/1.06 Montserrat;text-transform:uppercase;text-align:center;padding:26px 36px;color:var(--ink);white-space:nowrap}
+.box.accent{background:var(--accent);color:#fff}
+.box.ink{background:var(--ink);color:#fff;box-shadow:14px 14px 0 var(--accent)}
+.tag{position:absolute;background:var(--accent);color:#fff;border:7px solid var(--ink);box-shadow:9px 9px 0 var(--ink);font:900 46px/1 Montserrat;padding:12px 28px;text-transform:uppercase;white-space:nowrap}
+.tag.w{background:var(--paper);color:var(--ink)}
+.big{position:absolute;left:0;width:1080px;text-align:center;font:900 330px/1 Montserrat;color:var(--accent);paint-order:stroke fill;white-space:nowrap}
+.win{position:absolute;background:var(--paper);border:8px solid var(--ink);box-shadow:14px 14px 0 var(--ink);overflow:hidden}
+.win .bar{height:68px;background:var(--bg);border-bottom:8px solid var(--ink);display:flex;align-items:center;padding:0 24px;gap:14px;font:700 28px 'JetBrains Mono',monospace}
+.win .sq{width:24px;height:24px;border:5px solid var(--ink);background:var(--paper);box-sizing:border-box}
+.win .sq.a{background:var(--accent)}
+.win .url{flex:1;margin-left:14px;border:5px solid var(--ink);background:var(--paper);padding:4px 14px;font:500 28px 'JetBrains Mono',monospace;white-space:nowrap;overflow:hidden}
+.code{font:500 38px/1.5 'JetBrains Mono','DejaVu Sans Mono',monospace;padding:30px 36px;white-space:pre;color:var(--ink)}
+.code .c{color:var(--accent)}
+.code .k{font-weight:700}
+.cap{position:absolute;left:70px;width:940px;top:190px;text-align:center;font:800 64px/1.12 Montserrat;color:var(--ink);display:none}
+.cap .r{color:var(--accent)}
+.cap.boxed{background:var(--paper);border:8px solid var(--ink);box-shadow:12px 12px 0 var(--ink);padding:14px 26px;left:90px;width:900px;box-sizing:border-box}
+.sub{position:absolute;left:60px;width:960px;text-align:center;font:700 44px/1.18 Inter,sans-serif;color:#fff;-webkit-text-stroke:8px var(--ink);paint-order:stroke fill;display:none;letter-spacing:.5px;word-spacing:7px}
+.charwrap{position:absolute}
+.charwrap img{position:absolute;left:0;top:0;width:100%;height:100%;display:none}
+.row{display:flex;align-items:center;gap:18px;font:500 38px/1 'JetBrains Mono',monospace;padding:20px 8px;border-bottom:4px dashed rgba(0,0,0,.3)}
+.hz{background:repeating-linear-gradient(-45deg,var(--ink) 0 34px,var(--accent) 34px 68px)}
+.sqg{position:absolute;box-sizing:border-box;border:3px solid var(--ink);background:var(--paper)}
+.strk{position:relative;display:inline-block}
+.strk .stkbar{position:absolute;left:-14px;top:50%;height:14px;width:calc(100% + 28px);margin-top:-7px;background:var(--accent);border:4px solid var(--ink);transform-origin:0 50%;transform:scaleX(0)}
+</style></head>
+<body><div id="stage"></div>
+<script>window.ASSET_BASE='{{ROOT}}assets/character/';</script>
+{{THEME}}
+<script src="{{ROOT}}engine/theme.js"></script>
+<script src="timeline.js"></script>
+<script src="{{ROOT}}character/character.js"></script>
+<script src="{{ROOT}}engine/engine.js"></script>
+{{SCRIPTS}}
+<script>ENG.boot();</script>
+</body></html>

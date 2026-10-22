@@ -1,0 +1,5 @@
+Le ciel n'est pas bleu « par défaut » : c'est l'air qui renvoie le bleu du Soleil dans toutes les directions. Le violet est encore plus dévié, mais le Soleil en émet moins et nos yeux le voient mal, donc on ne le remarque pas.
+Et sur Mars, tu dirais quelle couleur ?
+
+Sources : manuels de physique (diffusion de Rayleigh)
+#physique #science

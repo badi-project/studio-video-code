@@ -1,0 +1,16 @@
+{
+  "_doc": "1 phrase = 1 liste de chunks (≈ 25 à 45 caractères chacun). *mot* = mot mis en couleur. Les nombres sont dits en toutes lettres automatiquement.",
+  "phrases": [
+    ["Pourquoi le ciel", "est *bleu* ?"],
+    ["La lumière du Soleil", "contient *toutes les couleurs*."],
+    ["En traversant l'air,", "elle rencontre des *molécules*", "minuscules."],
+    ["Ces molécules dispersent surtout", "les *courtes longueurs d'onde* :", "le bleu."],
+    ["Le bleu est dispersé", "environ *5 fois plus*", "que le rouge."],
+    ["Résultat : il nous arrive", "de *partout* dans le ciel."],
+    ["Et le *violet* ?", "Il est encore plus dispersé…"],
+    ["mais le Soleil en émet moins,", "et nos yeux y sont *moins sensibles*."],
+    ["Au coucher du soleil,", "la lumière traverse *plus d'air* :", "le bleu se perd en route,", "il reste l'*orange*."],
+    ["À toi : de quelle couleur", "est le ciel *sur Mars* ?"],
+    ["Abonne-toi", "pour la suite."]
+  ]
+}

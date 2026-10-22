@@ -1,0 +1,19 @@
+{
+  "_doc": "Réécritures phonétiques appliquées au texte PRONONCÉ seulement (jamais au texte affiché) : [motif regex, remplacement]. À compléter après chaque contrôle « qa ».",
+  "rules": [
+    ["\\bIA\\b", "I A"],
+    ["\\bAPI\\b", "A P I"],
+    ["\\bPDF\\b", "P D F"],
+    ["\\bUSA\\b", "U S A"],
+    ["\\bCEO\\b", "C E O"],
+    ["\\bGPU\\b", "G P U"],
+    ["\\bCPU\\b", "C P U"],
+    ["\\bADN\\b", "A D N"],
+    ["\\bNASA\\b", "Nassa"],
+    ["\\bESA\\b", "E S A"],
+    ["GitHub", "Gitt Hub"],
+    ["YouTube", "You Tioube"],
+    ["\\bWi-?Fi\\b", "Wi Fi"],
+    ["\\bLED\\b", "L E D"]
+  ]
+}

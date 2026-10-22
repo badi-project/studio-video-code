@@ -1,0 +1,19 @@
+# généré par setup_env.sh
+models/
+fonts/
+
+# généré pendant la fabrication
+assets/character/
+build/
+videos/*/build/
+out/
+
+# privé : ne jamais publier
+.audit-private.txt
+.env
+videos/journal.json
+
+# divers
+__pycache__/
+*.pyc
+.DS_Store
